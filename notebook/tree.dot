@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="petal width (cm) <= 1.65\ngini = 0.67\nsamples = 93\nvalue = [46, 53, 51]\nclass = versicolor", fillcolor="#fbfefc"] ;
+1 [label="sepal length (cm) <= 5.55\ngini = 0.51\nsamples = 61\nvalue = [46, 53, 1]\nclass = versicolor", fillcolor="#e5fcef"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="sepal width (cm) <= 2.8\ngini = 0.3\nsamples = 32\nvalue = [44, 10, 0]\nclass = setosa", fillcolor="#eb9e66"] ;
+1 -> 2 ;
+3 [label="petal length (cm) <= 2.15\ngini = 0.38\nsamples = 7\nvalue = [3, 9, 0]\nclass = versicolor", fillcolor="#7beeab"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [3, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+3 -> 4 ;
+5 [label="gini = 0.0\nsamples = 6\nvalue = [0, 9, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+3 -> 5 ;
+6 [label="petal width (cm) <= 1.05\ngini = 0.05\nsamples = 25\nvalue = [41, 1, 0]\nclass = setosa", fillcolor="#e6843e"] ;
+2 -> 6 ;
+7 [label="gini = 0.0\nsamples = 24\nvalue = [41, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 1\nvalue = [0, 1, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+6 -> 8 ;
+9 [label="sepal width (cm) <= 3.55\ngini = 0.12\nsamples = 29\nvalue = [2, 43, 1]\nclass = versicolor", fillcolor="#46e78a"] ;
+1 -> 9 ;
+10 [label="petal length (cm) <= 5.45\ngini = 0.04\nsamples = 27\nvalue = [0, 43, 1]\nclass = versicolor", fillcolor="#3ee684"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 26\nvalue = [0, 43, 0]\nclass = versicolor", fillcolor="#39e581"] ;
+10 -> 11 ;
+12 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 1]\nclass = virginica", fillcolor="#8139e5"] ;
+10 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0]\nclass = setosa", fillcolor="#e58139"] ;
+9 -> 13 ;
+14 [label="gini = 0.0\nsamples = 32\nvalue = [0, 0, 50]\nclass = virginica", fillcolor="#8139e5"] ;
+0 -> 14 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
